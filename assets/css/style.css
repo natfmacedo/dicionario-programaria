@@ -1,0 +1,92 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+    height: 100px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+/*Título principal*/
+h1 {
+    text-transform: uppercase; /*título inteiro em letra maiúscula*/
+    margin-bottom: 0;
+}
+
+/*Seção dos cards*/
+section {
+    margin: 0 auto;
+    display: block;
+    max-width: 1024px;
+    width: 100%;
+}
+
+/*Card*/
+.card {
+    display: inline-block; /*card um ao lado do outro*/
+    margin: 10px;
+    border: 1px solid #000;
+    vertical-align: top;
+    max-height: 100%;
+}
+
+/*Imagem do card*/
+.card img {
+    display: block; /*imagem em cima do texto*/
+    width: 300px;
+    height: 300px;
+}
+
+/*Efeito accordion do card*/
+.card details {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+}
+
+/*Título do card*/
+.card details summary {
+    font-size: 18px;
+    padding: 10px;
+}
+
+/*Texto do card*/
+.card details p {
+    padding: 0 10px;
+}
+
+/*Citação do card*/
+.card details blockquote {
+    color: #777;
+    font-style: italic;
+}
+
+/*versão para telas com largura máxima de 768px*/
+@media (max-width: 768px) {
+    header {
+        margin-bottom: 20px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .card {
+        display: block;
+        margin: 20px 10px;
+    }
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+    .card details {
+        width: 100%;
+    }
+    .card details summary {
+        font-size: 16px;
+    }
+    .card details p {
+        font-size: 14px;
+    }
+}
