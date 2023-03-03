@@ -59,7 +59,7 @@ function carregaDicionario() {
         content.innerHTML += 
             '<div class="card"> <img src="' + 
             biografias[bio].imagem + 
-            '"/> <details> <summary>' + 
+            '" alt="" /> <details> <summary>' + 
             biografias[bio].nome + 
             '</summary> <p>' +
             biografias[bio].descricao +
